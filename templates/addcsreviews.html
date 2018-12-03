@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block body %}
+	<head>
+		<title> Course Reviews</title>
+		<link rel = "stylesheet" type="text/css" href="/static/style.css"/>
+	</head>
+
+	<!--Form for posting the data-->
+	<h1> <p style = "color:blue; font-size:50px;"> CS Course Reviews </p> </h1>
+	<html>
+		<body>
+
+			<form action="" method="post">
+				<fieldset> <legend>Add your reviews here</legend>
+				Course Name :<br><input type="text" name="cn" value=""><br>				
+				Term & Year Offered :<br><input type="text" name="ty" value=""><br>
+				Instructor :<br><input type="text" name="ins" value=""><br>
+				Ratings :<br><input type="text" name="rat" value=""><br>
+				Reviews :<br><input type="text" name="re" value=""><br>
+				<br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+
+</body>
+</html>
+{% endblock %}
+
+

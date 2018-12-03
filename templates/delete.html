@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block body %}
+	<head>
+		<title> Course Reviews</title>
+		<link rel = "stylesheet" type="text/css" href="/static/style.css"/>
+	</head>
+
+	<!--Form for deleting the data-->
+	<h1> <p style = "color:blue; font-size:50px;"> CS Course Reviews </p> </h1>
+	<html>
+		<body>
+
+			<form action="" method="post">
+				<fieldset> <legend>Enter the coursename and Term  & Year offered to delete the record:</legend>
+				Course Name :<br><input type="text" name="cn" value="">
+				<br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+
+</body>
+</html>
+{% endblock %}
+
+

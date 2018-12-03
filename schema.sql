@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS csreview;
+
+CREATE TABLE csreview (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	coursename TEXT NOT NULL,
+	instructor TEXT NOT NULL,
+	ratings INTEGER NOT NULL,
+	reviews TEXT NOT NULL,
+	termyear TEXT NOT NULL
+	
+);

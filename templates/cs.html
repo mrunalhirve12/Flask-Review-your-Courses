@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+
+	<!--Retrieves the reviews-->
+	<h1> <p style = "color:blue; font-size:50px;"> CS Course Reviews </p> </h1>
+				{% block nav %} {% endblock  %}
+				<a href="addcsreviews"> Add your reviews</a></li><br><br>
+				<!--<a href="delete"> Delete</a></li>-->
+		{% for review in reviews %}
+		<p> 
+			
+			<h3>{{ review.coursename }}</h3>		
+			<p> Term & Year Offered : {{review.termyear}} </p>
+			<p> Instructor: {{review.instructor}} </p>
+			<p style= "color: green;">Ratings: {{review.ratings}}</p>	
+			<p>Review: {{review.reviews}} </p>	
+		</p>
+		<hr>
+		{% endfor %}
+{% endblock %}
